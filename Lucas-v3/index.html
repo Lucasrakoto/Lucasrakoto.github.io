@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>FA-2021</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1><span id="titre">Movie-inspired</span><br><span>Typo </span><span>graphie</span></h1>
+    </div>
+    <div class="paragraphe">
+        <p>Masterly animated captions allure your viewer
+        with modern motion design and introduce a
+        true filmicatmosphere in your edits</p>
+    </div>
+    <div class="video">
+        <img src="images/video_thumbnail.jpg" alt="">
+    </div>
+    <div class="tuto">
+        <ul>
+            <li>WATCH TUTORIAL</li>
+            <li>WATCH TRAILER</li>
+        </ul>
+    </div>
+    <a href="../Biba-v3/index.html">
+    <div class="slide">
+        <div id="img">
+            <img src="images/izy1jpg.jpg" alt="">
+        </div>
+    </div>
+    </a>
+
+    <!--*/*/*/*/*/*/*/*/*/**/*/*/*/*/*/*/-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+        var img = document.getElementById('img');
+        var images = ['images/izy2jpg.jpg', 'images/izy3jpg.jpg', 'images/izy1jpg.jpg'];
+        var x = 0;
+
+        function slide() {
+            if (x < images.length) {
+                x = x + 1;
+            }
+            else {
+                x = 1;
+            }
+            img.innerHTML = "<img src=" + images[x - 1] + ">";
+        }
+
+        setInterval(slide, 4000);
+    </script>
+</body>
+
+</html>

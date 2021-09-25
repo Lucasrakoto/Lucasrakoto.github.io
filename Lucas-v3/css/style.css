@@ -1,0 +1,108 @@
+body{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/izy6.jpg) ;
+    background-size: 90%;
+}
+@font-face{
+    font-family: Audiowide-Regular;
+    src: url(Caramel/Audiowide-Regular.ttf) format("truetype");
+}
+.title{
+    position: absolute;
+     width: 300px;
+    height:100px;
+    margin-top: 10%;
+    margin-left: 15%;
+    color: white;
+}
+#titre{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family:monospace;
+}
+.title h1{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family:sans-serif;
+}
+.title h1 span{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: Audiowide-Regular;
+}
+.paragraphe{
+    position: absolute;
+    width: 300px;
+    height:100px;
+    margin-top: 18%;
+    margin-left: 20%;
+    padding: 5px;
+    color: white;
+    transition: 0.5s ;
+}
+.paragraphe p{
+    font-family:sans-serif;
+}
+.video{
+    position: absolute;
+    width: 270px;
+    height:150px;
+    margin-top: 30%;
+    margin-left: 10%;
+}
+.video img{
+    width: 268px;
+    height: 148px;
+}
+ul{
+	list-style: none;
+
+}
+.tuto{
+    display: flex;
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    margin-top: 5%;
+   margin-left: 50%;
+   font-family: Audiowide-Regular;
+   font-size: 15px;
+   font-weight: bold;
+   text-transform: uppercase;
+   color: white;
+}
+.tuto ul{
+    display: flex;
+    position: absolute;
+    padding:0;
+}
+.tuto ul li{
+	margin: 0px 20px;
+}
+.slide{
+    position: relative;
+    width: 750px;
+    height: 450px;
+    float: right;
+    margin-top: 10%;
+    margin-right: 2%;
+    box-sizing: border-box;
+   box-shadow: 1px 2px 1px gray;
+    overflow: hidden;
+}
+.slide img{
+    width: 748px;
+    height: 448px;
+
+    animation: animate 2s linear;
+}
+@keyframes animate{
+    0%{
+        transform: scale(1.2);
+    }
+    10%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
